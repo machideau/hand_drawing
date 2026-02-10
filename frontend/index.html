@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hand Drawing - Premium Control</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <!-- Cursor Follower -->
+    <div id="cursor-follower" class="cursor-follower navigation"></div>
+
+    <!-- Canvas Container -->
+    <div class="canvas-container">
+      <canvas id="drawing-canvas"></canvas>
+      <canvas id="skeleton-canvas"></canvas>
+    </div>
+
+    <!-- UI Overlay -->
+    <div class="ui-overlay">
+      <div class="glass-panel tool-palette">
+        <div class="color-option active" style="background-color: #38bdf8;" data-color="#38bdf8"></div>
+        <div class="color-option" style="background-color: #f43f5e;" data-color="#f43f5e"></div>
+        <div class="color-option" style="background-color: #fbbf24;" data-color="#fbbf24"></div>
+        <div class="color-option" style="background-color: #22c55e;" data-color="#22c55e"></div>
+        <div class="color-option" style="background-color: #ffffff;" data-color="#ffffff"></div>
+        <button id="clear-btn" class="action-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-trash2">
+            <path d="M3 6h18" />
+            <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+            <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+            <line x1="10" x2="10" y1="11" y2="17" />
+            <line x1="14" x2="14" y1="11" y2="17" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Status Indicator -->
+    <div class="status-indicator">
+      <div id="status-dot" class="dot"></div>
+      <span id="status-text">Connecting Engine...</span>
+      <span id="mode-text" style="margin-left: 15px; color: #64748b;">Mode: NAVIGATION</span>
+    </div>
+
+    <!-- Gesture Hint -->
+    <div class="gesture-hint">
+      <b>Draw:</b> Index Up • <b>Move:</b> Pinch • <b>Colors:</b> Hover Palette • <b>Erase:</b> Fist
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
