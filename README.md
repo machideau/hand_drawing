@@ -2,23 +2,23 @@
 
 A real-time hand-tracking drawing application powered by Python (FastAPI, OpenCV, MediaPipe) and a clean, responsive vanilla JavaScript/CSS frontend.
 
-## ✨ Features
+## Features
 - **Real-time Detection**: Extremely fast hand landmark tracking using Google's MediaPipe.
 - **Smart Smoothing**: One-Euro filter implementation for silky-smooth cursor movement.
 - **WebSocket Communication**: Low-latency communication between the Python backend and the web frontend.
 - **Multi-Mode Interface**: Dynamic interaction based on your hand gestures.
 
-## 🖐️ Hand Gestures
+## Hand Gestures
 Control the canvas with simple hand movements:
 
 | Gesture | Mode | Description |
 | :--- | :--- | :--- |
-| **All Fingers Down** | 🧼 Eraser | Clear parts of your drawing. |
-| **Index + Middle Up** | 🖱️ Navigation | Move the cursor without drawing. |
-| **Index Up Only** | ✏️ Drawing | Start sketching on the canvas. |
-| **Pinch (Index+Thumb)** | 🎯 Selection | Interact with UI elements or select. |
+| **All Fingers Down** | Eraser | Clear parts of your drawing. |
+| **Index + Middle Up** | Navigation | Move the cursor without drawing. |
+| **Index Up Only** | Drawing | Start sketching on the canvas. |
+| **Pinch (Index+Thumb)** | Selection | Interact with UI elements or select. |
 
-## 📂 Project Structure
+## Project Structure
 ```text
 hand_drawing/
 ├── backend/
@@ -34,7 +34,7 @@ hand_drawing/
 └── requirements.txt     # Python dependencies
 ```
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 - **Python 3.10+** (Recommended)
@@ -61,7 +61,7 @@ hand_drawing/
    pip install -r requirements.txt
    ```
 
-## 🎮 Usage
+## Usage
 1. **Start the backend server**:
    ```bash
    python backend/main.py
@@ -69,10 +69,10 @@ hand_drawing/
 2. The application will automatically attempt to open your default browser.
 3. If it doesn't, manually open `frontend/index.html` in Chrome or Edge.
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 - **Camera not detected**: Ensure no other application (Zoom, Teams, etc.) is using your webcam.
 - **High Latency**: Make sure your room is well-lit for optimal MediaPipe detection.
 - **Firefox Issues**: For the best performance, use a Chromium-based browser (Chrome, Edge, Brave).
 
 ---
-*Created with ❤️ by Samuel (Machideau)*
+*Created with love by Samuel (Machideau)*
